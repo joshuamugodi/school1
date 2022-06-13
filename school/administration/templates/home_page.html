@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block title %}
+home page 
+{% endblock title %}
+{% block body %}
+    <center>
+        <h1>welcome to our school</h1>
+    
+        <p id ='greeting'>
+            i am very glade to welcome you to our school.
+            We offer grades from junior secondry to sinior secondry, 
+            Any prerequisits will assisted by the secretary of the school 
+            and for admission to the school will be found in the the headteachers
+             like for other assistance see the deputy headteacher.
+        </p>
+        
+        <form method="get" action="Admission_office/">
+            <input type="submit" name=" admission_office" value="admission office"><br><br>
+        </form>
+        <form>
+            <input type="submit" name="secretary" value="secretary"><br><br>
+        </form>
+        <form>
+            <input type="submit" name=" student_portal" value="student portal"><br><br>
+        </form>
+
+        
+    </center>
+{% endblock body %}

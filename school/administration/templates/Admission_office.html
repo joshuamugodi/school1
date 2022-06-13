@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}
+	admission office
+{% endblock title %}
+{% block body %}
+	<center>
+		<div>
+			<h1>this is the admission office </h1>
+			<div>
+				<h2>junior secondary</h2>
+				{% for school_recordsJ in school_recordsJ %}
+					<a>{{school_recordsJ.firstname}}
+					{{school_recordsJ.lastname}}
+					{{school_recordsJ.Class}}<br></a>
+				{% endfor %}
+
+			</div>
+			<div>
+				<h2>sinior secondary</h2>
+				{% for school_recordsS in school_recordsS %}
+					<a>{{school_recordsS.firstname}}
+					{{school_recordsS.lastname}}
+					{{school_recordsS.Class}}<br></a>
+				{% endfor %}
+			</div>
+		</div>
+	</center>
+{% endblock body %}

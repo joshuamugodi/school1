@@ -1,0 +1,9 @@
+#greeting {
+    padding-left: 50%;
+    padding-right: 20%;
+    background-color: rgb(146, 75, 75);
+    border-color: black;
+}
+p {
+    box-sizing: content-box;
+}

@@ -1,0 +1,17 @@
+
+{% extends 'base1.html' %}
+{% block title %}
+login form
+{% endblock title %}
+{% block body %}
+<h1>enter your exam number</h1>
+<form method='post' action= "login/">
+	{% csrf_token %}
+	<div class="input-group mb-3">
+		{{form}}
+		<input type="submit" name="login" value="login"><br><br>
+		{% comment %} <button type="button" class="btn btn-outline-secondary">submit</button> {% endcomment %}
+	</div>
+</form>
+{% endblock body %}
+
