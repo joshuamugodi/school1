@@ -4,14 +4,22 @@
 login form
 {% endblock title %}
 {% block body %}
-<h1>enter your exam number</h1>
-<form method='post' action= "login/">
-	{% csrf_token %}
-	<div class="input-group mb-3">
-		{{form}}
-		<input type="submit" name="login" value="login"><br><br>
-		{% comment %} <button type="button" class="btn btn-outline-secondary">submit</button> {% endcomment %}
-	</div>
-</form>
+
+<center>
+	<h1>enter your exam number</h1><br>
+	<form method='post' action= "/class_room/login/">
+		{% csrf_token %}
+		<div class="input-group mb-3">
+			{{form}}
+			<br>
+			
+				<button class="btn btn-outline-secondary" type="login" id="button-addon1" value="login">login</button>
+				<!-- <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon" aria-describedby="button-addon1"> -->
+			<!-- <input type="submit" name="login" ><br><br> -->
+			{% comment %} <button type="submit" class="btn btn-outline-secondary">submit</button> {% endcomment %}
+		</div>
+	</form>
+</center>
+
 {% endblock body %}
 
